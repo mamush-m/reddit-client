@@ -1,0 +1,54 @@
+
+
+// const clientID = 'j6sXDbvuy8TwKoI3ArhBBQ';
+// const type = 'code';
+// const randomStr = 'coco';
+// const uri = 'http://localhost:3000';
+// const duration = 'temporary';
+// const scope = 'history';
+
+// const authURL = `https://www.reddit.com/api/v1/authorize?client_id=${clientID}&response_type=${type}&state=${randomStr}&redirect_uri=${uri}&duration=${duration}&scope=${scope}`
+
+// fetch(authURL)
+
+// fetch('https://www.reddit.com/api/v1/access_token', {
+//     method: 'POST',
+//     headers: {
+//         'Authorization': 'Basic ' + btoa('j6sXDbvuy8TwKoI3ArhBBQ:QOqberBEISWWH4MBnhpxB7tdetuBjw'),
+
+//         'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'
+//     },
+//     body: 'grant_type=authorization_code&code=kF7G2Yv6Uvn_D95cI2-jAtjX_WuGZg&redirect_uri=http://localhost:3000'
+// }).then(res => console.log(res.json()))
+
+
+
+
+// fetch('https://www.reddit.com/api/v1/access_token', {
+//     method: 'POST',
+//     headers: {
+//         'Authorization': 'Basic ' + btoa('j6sXDbvuy8TwKoI3ArhBBQ:QOqberBEISWWH4MBnhpxB7tdetuBjw'),
+
+//         'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'
+//     },
+//     body: 'grant_type=authorization_code&code=kF7G2Yv6Uvn_D95cI2-jAtjX_WuGZg&redirect_uri=http://localhost:3000'
+// }).then(res => console.log(res.json()))
+
+// const mySync = async url => {
+//   const res = await fetch(url, {
+//       method: 'POST',
+//       headers: {
+//           'Authorization': 'Basic ' + btoa('j6sXDbvuy8TwKoI3ArhBBQ:QOqberBEISWWH4MBnhpxB7tdetuBjw'),
+  
+//           'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'
+//       },
+//       body:'grant_type=authorization_code&code=ww2MZse1YuKupNG-SSB9R7V-HOMvlA&redirect_uri=http://localhost:3000'
+//   })
+
+//   const jRes = await res.json();
+//   console.log(jRes);
+// }
+
+// const tokenURL = 'https://www.reddit.com/api/v1/access_token';
+
+// mySync(tokenURL);
