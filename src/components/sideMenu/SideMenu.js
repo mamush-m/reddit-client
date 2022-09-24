@@ -20,7 +20,8 @@ export const SideMenu = () => {
     // }, [status])
 
     return (
-        <div>
+        <div id="sideMenu">
+            <h6 onClick={() => window.location.reload()}>REFRESH</h6>
             <h4>Trending Subreddits</h4>
             <div>
                 <h5>1</h5>

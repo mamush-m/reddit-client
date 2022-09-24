@@ -45,7 +45,7 @@ export const Posts = () => {
     return (
         <div>
             {feed}
-            <SideMenu/>
+            {/* <SideMenu/> */}
         </div>
     )
 }

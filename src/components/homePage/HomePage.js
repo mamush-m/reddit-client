@@ -4,6 +4,7 @@ import { Posts } from "../../features/posts/Posts";
 import { useSelector, useDispatch } from "react-redux";
 import { selectStatus as indStatus, selectRender, selectActPost } from "../../features/indPost/indPostSlice";
 import { IndPost } from "../../features/indPost/IndPost";
+import { SideMenu } from "../sideMenu/SideMenu";
 
 export function HomePage() {
     const render = useSelector(selectRender)
@@ -13,7 +14,7 @@ export function HomePage() {
         <div>
             {/* <Posts/> */}
             {/* <SideMenu/> */}
-            {render? <IndPost/> : <Posts/>}
+            {render? <IndPost/> : <div style={{display: "flex", justifyContent: "space-around"}}><Posts/> <SideMenu/> </div>}
         </div>
     )
 }
