@@ -1,70 +1,44 @@
-# Getting Started with Create React App
+# Reddit Client App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
 
-## Available Scripts
+This app was built utilizing the un-official Reddit API. For the purposes of this project, since writing to the server wasn't within the project parameters, the unofficial was used.
 
-In the project directory, you can run:
+The main purpose of the project was to utilize Redux for managing larger pieces of state. Each Reddit post component was programmatically rendered based on live data from the Reddit website.
 
-### `npm start`
+## Wireframe
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<img src='src/Reddit Client Mockup.png'/>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+This is a mockup of what the page would like. It takes after Reddit's night mode on their website.
 
-### `npm test`
+## Technologies used
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The technologies used to create this project are as follows:
 
-### `npm run build`
+- **React**- for rendering the content and handling most of the logic
+- **Redux**- for managing application state
+- **React-Redux**- for connecting the redux store and all state-related logic back to our React components
+- **Redux-Toolkit**- for more efficiently managing the slices of state, configuring the **store** and handling asynchronous logic
+- **CSS**- for styling the application
+- **Jest**- built in React testing library, utilized to check the components rendered properly
+- **Git & GitHub**- Version controlling the project
+  
+## Features
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The features for this app are as follows:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- You can see a rendered list of posts when the page first loads, which directly mirrors what would be on the homepage of Reddit if you visited their website
+- You can search subreddits in the search bar and their corresponding posts will be displayed
+- If you don't want to search manually, you can select one of the *10* predefined popular subreddits on the right side of the page to render their data
+- You can see the number of likes and comments on each post, with these stats rendered alongside the individual posts
+- You can upvote or downvote each individual post
+- You can click on a post to render an individual page for it and see all of its post contents corresponding comments
+- The comments also display any reply comments if they exist, only up to the first layer of comments
+- You can also see the number of votes each individual comment and reply has based on real time data
+- You can upvote or downvote each individual comment as well as the reply comments
+- You can exit out of the rendered individual post page and go back to the page that rendered all the posts before you were redirected
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Future Work
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+For the future of this app, I hope to build its functionality to be able to also post data to Reddit. To do so, the official Reddit API needs to be used. This requires going through an OAuth workflow. I have already figured out the process for this, but have not implemented it for this project.
