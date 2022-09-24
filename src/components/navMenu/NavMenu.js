@@ -10,12 +10,11 @@ import AddIcon from '@mui/icons-material/Add';
 import RedditIcon from '@mui/icons-material/Reddit';
 import { setHome } from "../../features/posts/postsSlice";
 import { togglePost } from "../../features/posts/postsSlice";
-import { useDispatch } from "react-redux";
+
 // import avatar from '../../avatar/avatar'
 
 
 export const NavMenu = () => {
-    const dispatch = useDispatch();
     
     const logo2 = require('../../avatar/avatar.webp');
 
@@ -23,12 +22,17 @@ export const NavMenu = () => {
         <div id="nav">
             <a id="reddit" onClick={() => window.location.reload()}>
                 <RedditIcon id="reddit-icon"/>
-                <p>reddit</p>
+                <div id="cont-p">
+                    <p>redd</p>
+                    <p id="i" style={{color: 'tomato'}}>i</p>
+                    <p>t</p>
+                </div>
+                {/* <p id="cont-title">redd<p>i</p>t</p> */}
             </a>
             
             <div id="home">
                 <div id="house">
-                    <HomeIcon/>
+                    <HomeIcon id="home-icon"/>
                     <h4>Home</h4>
                 </div>
                 
