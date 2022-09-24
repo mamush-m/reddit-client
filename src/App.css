@@ -176,6 +176,7 @@ body > * {
   max-height: 800px;
   margin: 10px 0px;
   display: inline-block;
+  border-radius: 10px;
 }
 
 #post:hover {
@@ -192,7 +193,11 @@ body > * {
   justify-content: space-between;
   /* border: 3px solid green; */
   max-height: 800px;
-  border-radius: 30px;
+  border-radius: 10px;
+}
+
+#ind-post > * {
+  border-radius: 8px;
 }
 
 #post-stats {
@@ -268,6 +273,28 @@ body > * {
   font-size: 17px;
   font-weight: bolder;
   color: whitesmoke;
+}
+
+#expanded-stats {
+  display: flex;
+  margin: 20px 0 10px 0;
+  justify-content: space-evenly;
+  width: 50%;
+  /* border-top: 1px dotted deepskyblue; */
+}
+
+#expanded-stats > * {
+  display: flex;
+  /* border: 3px solid violet; */
+  width: 25%;
+  justify-content: space-evenly;
+  color: var(--arrow-color);
+}
+
+#expanded-stats > * p {
+  color: whitesmoke;
+  color: var(--arrow-color);
+
 }
 
 #img {

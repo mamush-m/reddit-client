@@ -68,15 +68,36 @@ export const Post = ({author, id, comments, src, subreddit, postTitle, time, ups
 
                 <p id="title">{title}</p>
                 {media}
+
+                
+                <div id="expanded-stats">
+
+                    <div id="chat">
+                        <ChatBubbleOutlineOutlinedIcon/>
+                        <p>{numOfComments}</p>
+                    </div>
+
+                    <div id="share">
+                        <ShareIcon/>
+                        <p>Share</p>
+                    </div>
+
+                    <div id="save">
+                        <SaveAltIcon/>
+                        <p>Save</p>
+                    </div>
+                
+                </div>
             </div>
             
 
-            <ChatBubbleOutlineOutlinedIcon/>
+           
+            {/* <ChatBubbleOutlineOutlinedIcon/>
             <p>{numOfComments}</p>
             <ShareIcon/>
             <p>Share</p>
             <SaveAltIcon/>
-            <p>Save</p>
+            <p>Save</p> */}
         </div>
 
     //Video version
@@ -102,15 +123,34 @@ export const Post = ({author, id, comments, src, subreddit, postTitle, time, ups
                 <p id="title">{title}</p>
                 {media}
 
+                <div id="expanded-stats">
+
+                    <div id="chat">
+                        <ChatBubbleOutlineOutlinedIcon/>
+                        <p>{numOfComments}</p>
+                    </div>
+
+                    <div id="share">
+                        <ShareIcon/>
+                        <p>Share</p>
+                    </div>
+
+                    <div id="save">
+                        <SaveAltIcon/>
+                        <p>Save</p>
+                    </div>
+
+                    </div>
+
             </div>
 
 
-            <ChatBubbleOutlineOutlinedIcon/>
+            {/* <ChatBubbleOutlineOutlinedIcon/>
             <p>{numOfComments}</p>
             <ShareIcon/>
             <p>Share</p>
             <SaveAltIcon/>
-            <p>Save</p>
+            <p>Save</p> */}
         </div>
 
     //No media version
@@ -131,15 +171,34 @@ export const Post = ({author, id, comments, src, subreddit, postTitle, time, ups
                 </div>
 
                 <p id="title">{title}</p>
+
+                <div id="expanded-stats">
+
+                    <div id="chat">
+                        <ChatBubbleOutlineOutlinedIcon/>
+                        <p>{numOfComments}</p>
+                    </div>
+
+                    <div id="share">
+                        <ShareIcon/>
+                        <p>Share</p>
+                    </div>
+
+                    <div id="save">
+                        <SaveAltIcon/>
+                        <p>Save</p>
+                    </div>
+
+                    </div>
             </div>
             
             
-            <ChatBubbleOutlineOutlinedIcon/>
+            {/* <ChatBubbleOutlineOutlinedIcon/>
             <p>{numOfComments}</p>
             <ShareIcon/>
             <p>Share</p>
             <SaveAltIcon/>
-            <p>Save</p>
+            <p>Save</p> */}
         </div>
     }
 
