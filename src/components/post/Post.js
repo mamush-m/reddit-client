@@ -90,14 +90,6 @@ export const Post = ({author, id, comments, src, subreddit, postTitle, time, ups
                 </div>
             </div>
             
-
-           
-            {/* <ChatBubbleOutlineOutlinedIcon/>
-            <p>{numOfComments}</p>
-            <ShareIcon/>
-            <p>Share</p>
-            <SaveAltIcon/>
-            <p>Save</p> */}
         </div>
 
     //Video version

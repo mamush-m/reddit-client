@@ -21,13 +21,13 @@ export const ActPost = () => {
         
         //Image post
         if(actPost.post_hint && actPost.post_hint === 'image'){
-            media = <img id='ind-media' src={actPost.url}/>
+            media = <img id='ind-img' src={actPost.url}/>
         }
 
         //Video post
         if(actPost.is_video === true && actPost.post_hint.includes('vid')) {
             const source = actPost.media.reddit_video.fallback_url;
-            media = <video src={source} id="ind-vid" controls autoPlay="true">Couldn't load</video>
+            media = <video id="ind-vid" src={source} controls autoPlay="true">Couldn't load</video>
         }
 
         let votes;
@@ -42,20 +42,26 @@ export const ActPost = () => {
         // if(actPost.post_hint && acp)
 
         post = <div id='act-post'>
-            <h3 onClick={() => dispatch(togglePost())}>close</h3>
+            <h3 id='close' onClick={() => dispatch(togglePost())}>X close</h3>
 
-            <div>
-                <ArrowUpwardOutlinedIcon id="ind-up"/>
-                <p>{votes}</p>
-                <ArrowDownwardIcon id="ind-down"/>
+            <div id='ind-info' style={{marginLeft: "15px"}}>
+                <div>
+                    <ArrowUpwardOutlinedIcon id="ind-up"/>
+                    <p id='ind-votes'>{votes}</p>
+                    <ArrowDownwardIcon id="ind-down"/>
+                </div>
+
+                <div style={{marginLeft: "20px"}}>
+                    <div style={{display: "flex"}}>
+                        <p id='ind-subreddit'>{actPost.subreddit_name_prefixed}</p>
+                        <p id='ind-author'>Posted by u/{actPost.author}</p>
+                    </div>
+                    <h1 id='ind-title'>{title}</h1>
+                    {media}
+                </div>
             </div>
 
-            <div>
-                <p id='ind-subreddit'>{actPost.subreddit_name_prefixed}</p>
-                <p id='ind-author'>Posted by u/{actPost.author}</p>
-                <h1>{title}</h1>
-                {media}
-            </div>
+            
 
         </div>
 

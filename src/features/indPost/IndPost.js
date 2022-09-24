@@ -6,7 +6,7 @@ import { Comments } from "./Comments";
 import { ActPost } from "./ActPost";
 
 export const IndPost = () => {
-    // const dispatch = useDispatch();
+    const dispatch = useDispatch();
 
     // const actPost = useSelector(selectActPost);
     // const status = useSelector(selectStatus);
@@ -69,8 +69,7 @@ export const IndPost = () => {
 
 
     return (
-        <div>
-            {/* <h2 id="go-back" onHover={console.log('happy days')}>Go back`</h2> */}
+        <div style={{width: "70%", backgroundColor: "hsla(0, 0%, 10%, 1)", margin: "0 auto", borderRadius: "55px"}}>
             <ActPost/>
             <Comments/>
         </div>

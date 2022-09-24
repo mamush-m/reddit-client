@@ -36,17 +36,23 @@ export const Comments = () => {
             //Has replies
             if(comment.distinguished === null && comment.replies && comment.replies.data.children.length > 0 && comment.subreddit_id){
 
-                commBody.push(<ul className="list outer" key={comment.id}>
+                commBody.push(<ul id="list-wrapper" className="list outer" key={comment.id}>
                     <li>
 
-                        <h4 id="outer-author">{comment.author}</h4>
-                        <p id="outer-body">{comment.body}</p>
-                        <ThumbUpAltOutlinedIcon onClick={() => {
-                            dispatch(upComment(comment))
-                        }}/>
-                        <p>{commVotes}</p>
-                        <ThumbDownAltOutlinedIcon onClick={() => dispatch(downComment(comment))}/>
+                        <div >
+                            <div >
+                                <h4 id="outer-author">{comment.author}</h4>
+                                <p id="outer-body">{comment.body}</p>
+                            </div>
 
+                            <div id="outer-stats" style={{display: "flex", alignItems: "center", marginBottom: "10px"}}>
+                                <ThumbUpAltOutlinedIcon id="outer-thumbsUp" onClick={() => {dispatch(upComment(comment))}}/>
+                                <p style={{margin: "0 5px"}}>{commVotes}</p>
+                                <ThumbDownAltOutlinedIcon id="outer-thumbsDown" style={{display: "inline"}} onClick={() => dispatch(downComment(comment))}/>
+                            </div>
+                        </div>
+
+                       
                         <ul className="list">
                             {comment.replies.data.children.filter(child => child.kind === 't1').map(childCom => {
                                 let childVotes;
@@ -68,15 +74,18 @@ export const Comments = () => {
     
                                     <div id="actual-reply">
                                         <h4 id="inner-author">{childCom.data.author}</h4>
-                                        <li key={childCom.id} id='reply'>{childCom.data.body}</li>
-                                        <ThumbUpAltOutlinedIcon id="thumb-up" onClick={() => {
-                                            dispatch(upReply({parent: comment, child: childCom}))
-                                        }}/>
-                                        {/* <p>{childCom.data.ups > 1000? `${childCom.data.ups/1000}k` : childCom.data.ups}</p> */}
-                                        <p>{childVotes}</p>
-                                        <ThumbDownAltOutlinedIcon onClick={() => {
-                                            dispatch(downReply({parent: comment, child: childCom}))
-                                        }}/>
+                                        <li style={{margin: "5px 0 10px 0"}} key={childCom.id} id='reply'>{childCom.data.body}</li>
+
+                                        <div id="inner-stats" style={{display: "flex"}}>
+                                            <ThumbUpAltOutlinedIcon id="inner-thumbUp" onClick={() => {
+                                                dispatch(upReply({parent: comment, child: childCom}))
+                                            }}/>
+                                            <p>{childVotes}</p>
+                                            <ThumbDownAltOutlinedIcon id="inner-thumbDown" onClick={() => {
+                                                dispatch(downReply({parent: comment, child: childCom}))
+                                            }}/>
+                                        </div>
+                                       
                                     </div>
                                     
                                 </div>
