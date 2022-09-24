@@ -1,5 +1,12 @@
 # Reddit Client App
 
+- [Reddit Client App](#reddit-client-app)
+  - [Description](#description)
+  - [Wireframe](#wireframe)
+  - [Technologies used](#technologies-used)
+  - [Features](#features)
+  - [Future Work](#future-work)
+
 ## Description
 
 This app was built utilizing the un-official Reddit API. For the purposes of this project, since writing to the server wasn't within the project parameters, the unofficial was used.
