@@ -39,13 +39,13 @@ The features for this app are as follows:
 - You can search subreddits in the search bar and their corresponding posts will be displayed
 - If you don't want to search manually, you can select one of the *10* predefined popular subreddits on the right side of the page to render their data
 - You can see the number of likes and comments on each post, with these stats rendered alongside the individual posts
-- You can upvote or downvote each individual post
+- You can up-vote or down-vote each individual post
 - You can click on a post to render an individual page for it and see all of its post contents corresponding comments
 - The comments also display any reply comments if they exist, only up to the first layer of comments
 - You can also see the number of votes each individual comment and reply has based on real time data
-- You can upvote or downvote each individual comment as well as the reply comments
+- You can up-vote or down-vote each individual comment as well as the reply comments
 - You can exit out of the rendered individual post page and go back to the page that rendered all the posts before you were redirected
 
 ## Future Work
 
-For the future of this app, I hope to build its functionality to be able to also post data to Reddit. To do so, the official Reddit API needs to be used. This requires going through an OAuth workflow. I have already figured out the process for this, but have not implemented it for this project.
+Regarding the future outlook of this app, I hope to build its functionality to be able to also post data to Reddit. To do so, the official Reddit API needs to be used. This requires going through an OAuth workflow. I have already figured out the process for this, but have not implemented it for this project.
