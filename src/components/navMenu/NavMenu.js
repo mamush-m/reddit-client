@@ -8,8 +8,8 @@ import ChatBubbleOutlineOutlinedIcon from '@mui/icons-material/ChatBubbleOutline
 import NotificationsNoneRoundedIcon from '@mui/icons-material/NotificationsNoneRounded';
 import AddIcon from '@mui/icons-material/Add';
 import RedditIcon from '@mui/icons-material/Reddit';
-import { setHome } from "../../features/posts/postsSlice";
-import { togglePost } from "../../features/posts/postsSlice";
+// import { setHome } from "../../features/posts/postsSlice";
+// import { togglePost } from "../../features/posts/postsSlice";
 
 // import avatar from '../../avatar/avatar'
 
@@ -20,7 +20,7 @@ export const NavMenu = () => {
 
     return (
         <div id="nav">
-            <a id="reddit" onClick={() => window.location.reload()}>
+            <a href="#" id="reddit" onClick={() => window.location.reload()}>
                 <RedditIcon id="reddit-icon"/>
                 <div id="cont-p">
                     <p>redd</p>
