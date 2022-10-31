@@ -20,7 +20,7 @@ export const NavMenu = () => {
 
     return (
         <div id="nav">
-            <a href="#" id="reddit" onClick={() => window.location.reload()}>
+            <a id="reddit" onClick={() => window.location.reload()}>
                 <RedditIcon id="reddit-icon"/>
                 <div id="cont-p">
                     <p>redd</p>
