@@ -70,14 +70,12 @@ body > * {
 
 #home {
   display: flex;
-  /* background-color: grey; */
   width: 10rem;
   justify-content: space-between;
   margin-right: 10px;
 }
 
 #home:hover {
-  /* border: 2px solid gray; */
   background-color: lightgray;
   border-radius: 10px;
 }
@@ -88,7 +86,6 @@ body > * {
 }
 
 #house {
-  /* border: 2px solid yellow; */
   width: 60%;
   justify-content: space-evenly;
 }
